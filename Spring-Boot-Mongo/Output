@@ -1,0 +1,24 @@
+
+Request
+	method:post
+	endpoint: http://localhost:8080/user/create
+	Content-Type:application/json
+	body: {
+			"country":"India",
+			"name":"Mathan"
+		   }
+		   
+Response
+	Status: 201
+	
+
+Request
+	method:GET
+	endpoint: http://localhost:8080/user/get
+	Content-Type:application/json
+		   
+Response
+	Status: 200
+	content: [{"id":"5afec0ad72637160400936b6","country":"India","name":"Mathan"}]
+	
+ 

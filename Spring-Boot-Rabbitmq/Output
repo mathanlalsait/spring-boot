@@ -1,0 +1,60 @@
+Request:
+	endpoint: http://localhost:8080/send?msg=hai candid
+	method:get
+Response:
+	200
+	Successfully Msg Sent
+
+Console:
+
+*****hai candid
+Send msg = hai candid
+Send msg = hai candid
+Send msg = hai candid
+Send msg = hai candid
+Send msg = hai candid
+Send msg = hai candid
+Send msg = hai candid
+Send msg = hai candid
+Send msg = hai candid
+Send msg = hai candid
+Send msg = hai candid
+Send msg = hai candid
+Send msg = hai candid
+Send msg = hai candid
+Send msg = hai candid
+Send msg = hai candid
+Send msg = hai candid
+Send msg = hai candid
+Send msg = hai candid
+Recieved Message: hai candid
+Send msg = hai candid
+Send msg = hai candid
+Send msg = hai candid
+Send msg = hai candid
+Send msg = hai candid
+Send msg = hai candid
+Recieved Message: hai candid
+Recieved Message: hai candid
+Recieved Message: hai candid
+Recieved Message: hai candid
+Recieved Message: hai candid
+Recieved Message: hai candid
+Recieved Message: hai candid
+Recieved Message: hai candid
+Recieved Message: hai candid
+Recieved Message: hai candid
+Recieved Message: hai candid
+Recieved Message: hai candid
+Recieved Message: hai candid
+Recieved Message: hai candid
+Recieved Message: hai candid
+Recieved Message: hai candid
+Recieved Message: hai candid
+Recieved Message: hai candid
+Recieved Message: hai candid
+Recieved Message: hai candid
+Recieved Message: hai candid
+Recieved Message: hai candid
+Recieved Message: hai candid
+Recieved Message: hai candid
