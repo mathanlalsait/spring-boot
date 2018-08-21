@@ -10,7 +10,7 @@ public class UserController {
 	
 	 @GetMapping("/user")
 	    String home() {
-	        return "Hello";
+	        return "Helloworld";
 	    }
 
 }

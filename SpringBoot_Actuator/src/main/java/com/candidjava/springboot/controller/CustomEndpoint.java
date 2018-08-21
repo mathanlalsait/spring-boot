@@ -1,6 +1,7 @@
 package com.candidjava.springboot.controller;
 
-import org.springframework.boot.actuate.endpoint.Endpoint;
+//import org.springframework.boot.actuate.endpoint.Endpoint;
+import org.springframework.boot.actuate.endpoint.EndpointFilter;
 import org.springframework.stereotype.Component;
 
 @Component
