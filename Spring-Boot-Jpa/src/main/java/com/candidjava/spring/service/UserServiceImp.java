@@ -27,7 +27,7 @@ public class UserServiceImp implements UserService {
 
 	public User findById(long id) {
 		// TODO Auto-generated method stub
-		return userRepository.findOne(id);
+		return userRepository.findById(id).get();
 	}
 
 	public User update(User user, long l) {
@@ -37,7 +37,7 @@ public class UserServiceImp implements UserService {
 
 	public void deleteUserById(long id) {
 		// TODO Auto-generated method stub
-		userRepository.delete(id);
+		userRepository.deleteById(id);
 	}
 
 	public User updatePartially(User user, long id) {
