@@ -20,27 +20,27 @@ public class StudentConroller {
 	@Autowired
 	StudentService service;
 
-	@PostMapping
+	@PostMapping("/create")
 	public void create(@Valid @RequestBody Student student) {
 		service.createStudent(student);
 	}
 
-	@GetMapping
+	@GetMapping("/getAll")
 	public List<Student> get() {
 		return service.getAllStudents();
 	}
 
-	@GetMapping("/{id}")
+	@GetMapping("/get/{id}")
 	public Student getById(@PathVariable("id") String id) {
 		return service.getStudentById(id);
 	}
 
-	@PutMapping("/{id}")
+	@PutMapping("/update/{id}")
 	public void update(@PathVariable("id") String id, @Valid @RequestBody Student student) {
 		service.updateStudent(id, student);
 	}
 
-	@DeleteMapping("/{id}")
+	@DeleteMapping("/delete/{id}")
 	public void deleteById(@PathVariable("id") String id) {
 		this.service.deleteStudentById(id);
 	}
