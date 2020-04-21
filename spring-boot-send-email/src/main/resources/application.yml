@@ -1,0 +1,17 @@
+server:
+   port: 9090
+spring:
+   mail:
+      host: smtp.gmail.com
+      port: 587
+      username: sample@gmail.com
+      password: samplepassword@123
+      properties:
+         mail:
+            smtp:
+               auth: true
+               connectiontimeout: 5000
+               timeout: 5000
+               writetimeout: 5000
+               starttls:
+                  enable: true
