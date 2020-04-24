@@ -4,9 +4,7 @@ package com.candidjava.spring.controller;
 
 
 import java.util.List;
-
-
-
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
@@ -40,7 +38,8 @@ public class UserController {
     @GetMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<User> getUserById(@PathVariable("id") String id) {
         System.out.println("Fetching User with id " + id);
-        User user = userService.findById(id);
+        Optional<User> usr = userService.findById(id);
+        User user = usr.get();
         if (user == null) {
             return new ResponseEntity<User>(HttpStatus.NOT_FOUND);
         }
@@ -67,7 +66,8 @@ public class UserController {
 	public ResponseEntity<String> updateUser(@RequestBody User currentUser)
 	{
 		System.out.println("sd");
-	User user = userService.findById(currentUser.getId());
+	Optional<User> usr = userService.findById(currentUser.getId());
+	 User user = usr.get();
 	if (user==null) {
 		return new ResponseEntity<String>(HttpStatus.NOT_FOUND);
 	}
@@ -77,7 +77,8 @@ public class UserController {
 	
 	@DeleteMapping(value="/{id}", headers ="Accept=application/json")
 	public ResponseEntity<User> deleteUser(@PathVariable("id") String id){
-		User user = userService.findById(id);
+		Optional<User> usr = userService.findById(id);
+		 User user = usr.get();
 		if (user == null) {
 			return new ResponseEntity<User>(HttpStatus.NOT_FOUND);
 		}
@@ -87,7 +88,8 @@ public class UserController {
 	
 	@PatchMapping(value="/{id}", headers="Accept=application/json")
 	public ResponseEntity<User> updateUserPartially(@PathVariable("id") String id, @RequestBody User currentUser){
-		User user = userService.findById(id);
+		Optional<User> usr1 = userService.findById(id);
+		 User user = usr1.get();
 		if(user ==null){
 			return new ResponseEntity<User>(HttpStatus.NOT_FOUND);
 		}
