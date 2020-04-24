@@ -1,0 +1,6 @@
+org:
+   quartz:
+      scheduler:
+         instanceName: springBootQuartzApp
+         instanceId: AUTO
+         threadCount: 1

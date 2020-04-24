@@ -1,0 +1,23 @@
+<html  xmlns:th="http://www.thymeleaf.org">
+<div th:switch="${students}">
+    <h2 th:case="null">No students yet!</h2>
+        <div th:case="*">
+            <h2>Students</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr th:each="student : ${students}">
+                    <td th:text="${student.id}"></td>
+                    <td th:text="${student.name}"></td>
+                     <td th:text="${student.age}"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>      
+</div>
