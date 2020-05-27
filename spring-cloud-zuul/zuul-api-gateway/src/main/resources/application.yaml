@@ -1,0 +1,6 @@
+server:
+  port: 8100
+zuul:
+  routes:
+    rest-service:
+      url: http://localhost:9090
