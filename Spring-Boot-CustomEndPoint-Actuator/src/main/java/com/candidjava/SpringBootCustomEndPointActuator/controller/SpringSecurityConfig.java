@@ -1,4 +1,4 @@
-package com.candidjava.springboot.controller;
+package com.candidjava.SpringBootCustomEndPointActuator.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
