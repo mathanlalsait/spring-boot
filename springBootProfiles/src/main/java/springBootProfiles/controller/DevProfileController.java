@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class DevProfileController {
 
 	@GetMapping
-	public String messages() {
+	public String message() {
 		return "A message from dev";
 	}
 
