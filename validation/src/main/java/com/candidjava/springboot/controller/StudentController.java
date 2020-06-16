@@ -25,7 +25,7 @@ import com.candidjava.springboot.service.StudentService;
 
 @RestController
 @RequestMapping(value = "/student")
-public class StudentConroller {
+public class StudentController {
 	@Autowired
 	StudentService service;
 

@@ -12,7 +12,9 @@ public class StudentService {
 
 	private List<Student> studentList = new ArrayList<Student>(Arrays.asList(
 
-			new Student("1", "ram", "20"), new Student("2", "arun", "21"), new Student("3", "karthick", "22")
+			new Student("1", "ram", "20", "ram@gmail.com", "9876543210", "email"),
+			new Student("2", "arun", "21", "arun@gmail.com", "987654321", "mobile"),
+			new Student("3", "karthick", "22", "karthick@gmail.com", "987654322", "email")
 
 	));
 

@@ -3,20 +3,21 @@ package com.candidjava.spring.bean;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-
-@SuppressWarnings("serial")
 @Document(collection = "user")
-public class User  extends BaseEntity{
+public class User {
+	@Id
+	private String id;
 
-	
 	private String country;
-	
+
 	private String name;
-	
-	public User(){
-		
+
+	public User() {
+
 	}
-	public User(String country, String name){
+
+	public User(String id, String country, String name) {
+		this.id = id;
 		this.country = country;
 		this.name = name;
 	}
@@ -35,6 +36,14 @@ public class User  extends BaseEntity{
 
 	public void setCountry(String country) {
 		this.country = country;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
 	}
 
 }
