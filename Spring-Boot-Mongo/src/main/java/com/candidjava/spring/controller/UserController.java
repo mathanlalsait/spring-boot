@@ -58,6 +58,7 @@ public class UserController {
 	 @GetMapping(value="/get", headers="Accept=application/json")
 	 public List<User> getAllUser() {	 
 	  List<User> tasks=userService.getUser();
+	  System.out.println(tasks.size());
 	  return tasks;
 	
 	 }

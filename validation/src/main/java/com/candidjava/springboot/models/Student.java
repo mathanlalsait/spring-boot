@@ -17,10 +17,13 @@ public class Student {
 	@CommunicationType
 	private String communicationType;
 
-	public Student(String id, String name, String age) {
+	public Student(String id, String name, String age, String email, String mobile, String communicationType) {
 		this.id = id;
 		this.name = name;
 		this.age = age;
+		this.email = email;
+		this.mobile = mobile;
+		this.communicationType = communicationType;
 	}
 
 	public String getCommunicationType() {

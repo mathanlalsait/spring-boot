@@ -16,32 +16,9 @@ public class StudentService {
 
 	));
 
-	public void createStudent(Student student) {
-		studentList.add(student);
-	}
-
 	public List<Student> getAllStudents() {
 		return studentList;
 
-	}
-
-	public Student getStudentById(String id) {
-		return studentList.stream().filter(student -> student.getId().equals(id)).findFirst().get();
-
-	}
-
-	public void updateStudent(String id, Student student) {
-		int counter = 0;
-		for (Student eachStudent : studentList) {
-			if (eachStudent.getId().equals(id)) {
-				studentList.set(counter, student);
-			}
-			counter++;
-		}
-	}
-
-	public void deleteStudentById(String id) {
-		studentList.removeIf(student -> student.getId().equals(id));
 	}
 
 }
