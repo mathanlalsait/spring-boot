@@ -5,10 +5,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringJsonApplication {
+public class SpringGsonApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringJsonApplication.class, args);
+		SpringApplication.run(SpringGsonApplication.class, args);
 	}
 
 }

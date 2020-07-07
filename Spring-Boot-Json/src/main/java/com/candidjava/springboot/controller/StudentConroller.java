@@ -23,7 +23,9 @@ import com.google.gson.Gson;
 public class StudentConroller {
 	@Autowired
 	StudentService service;
-	private Gson gson = new Gson();
+
+	@Autowired
+	Gson gson;
 
 	@PostMapping("/create")
 	public void create(@Valid @RequestBody Student student) {
@@ -32,7 +34,7 @@ public class StudentConroller {
 
 	@GetMapping("/getAll")
 	public String get() {
-		return gson.toJson(service.getAllStudents()); //using Gson
+		return gson.toJson(service.getAllStudents()); // using Gson
 	}
 
 	@GetMapping("/get/{id}")
