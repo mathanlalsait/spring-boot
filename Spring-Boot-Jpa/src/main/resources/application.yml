@@ -1,12 +1,12 @@
 spring:
-datasource:
-driver : com.mysql.jdbc.Driver
-url : jdbc:mysql://localhost:3306/test3
-username : root
-passowrd : root
-jpa:
-show-sql : true
-hibernate:
-ddl-auto: update
-dialect: org.hibernate.dialect.MySQL5Dialect
-properties :
+ datasource:
+  driver : com.mysql.jdbc.Driver
+  url : jdbc:mysql://localhost:3306/test3
+  username : root
+  passowrd : root
+ jpa:
+  show-sql : true
+  hibernate:
+  ddl-auto: update
+  dialect: org.hibernate.dialect.MySQL5Dialect
+  properties :
